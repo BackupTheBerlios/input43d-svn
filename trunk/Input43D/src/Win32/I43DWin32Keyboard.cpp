@@ -18,7 +18,7 @@ Place - Suite 330, Boston, MA 02111-1307, USA, or go to
 http://www.gnu.org/copyleft/lesser.txt.
 ------------------------------------------------------------------------------------- */
 
-#include "I43DWin32Keyboard.h"
+#include "Win32/I43DWin32Keyboard.h"
 
 namespace I43D {
 
@@ -29,24 +29,30 @@ Win32Keyboard::~Win32Keyboard() {
 }
 
 const std::wstring Win32Keyboard::getLayoutName() {
+	return NULL;
 }
 
 void Win32Keyboard::enableEvents(const bool flag) {
 }
 
 bool Win32Keyboard::isKeyPressed(const unsigned short keyNum) {
+	return false;
 }
 
-int Win32Keyboard::getScanCodeForKeyNum(const unsigned short keyNum) {
+unsigned int Win32Keyboard::getScanCodeForKeyNum(const unsigned short keyNum) {
+	return 0;
 }
 
-short Win32Keyboard::getKeyNumForScanCode(const unsigned int scanCode) {
+unsigned short Win32Keyboard::getKeyNumForScanCode(const unsigned int scanCode) {
+	return 0;
 }
 
 NPKeyID Win32Keyboard::getNPKForKeyNum(const unsigned short keyNum) {
+	return NPK_ENTER;
 }
 
-short Win32Keyboard::getKeyNumForNPK(const NPKeyID npk) {
+unsigned short Win32Keyboard::getKeyNumForNPK(const NPKeyID npk) {
+	return 0;
 }
 
 } // namespace I43D 

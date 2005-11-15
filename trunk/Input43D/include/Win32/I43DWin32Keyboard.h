@@ -17,8 +17,8 @@ this program; if not, write to the Free Software Foundation, Inc., 59 Temple
 Place - Suite 330, Boston, MA 02111-1307, USA, or go to
 http://www.gnu.org/copyleft/lesser.txt.
 ------------------------------------------------------------------------------------- */
-#ifndef _I43D_KEYBOARD_H_
-#define _I43D_KEYBOARD_H_
+#ifndef _I43D_WIN32KEYBOARD_H_
+#define _I43D_WIN32KEYBOARD_H_
 
 #include "I43DKeyboard.h"
 #include <set>
@@ -32,7 +32,7 @@ http://www.gnu.org/copyleft/lesser.txt.
 
 namespace I43D {
 
-class _DLL_EXPORT Win32Keyboard :: public I43D::Keyboard {
+class _DLL_EXPORT Win32Keyboard : public I43D::Keyboard {
 public:
 	/*!
 	 * @brief
@@ -70,4 +70,4 @@ public:
 };
 
 } // namespace I43D 
-#endif  // _I43D_KEYBOARD_H_
+#endif  // _I43D_WIN32KEYBOARD_H_

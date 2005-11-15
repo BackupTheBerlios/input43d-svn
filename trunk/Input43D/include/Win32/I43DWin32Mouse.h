@@ -18,8 +18,8 @@ Place - Suite 330, Boston, MA 02111-1307, USA, or go to
 http://www.gnu.org/copyleft/lesser.txt.
 ------------------------------------------------------------------------------------- */
 
-#ifndef _I43D_MOUSE_H_
-#define _I43D_MOUSE_H_
+#ifndef _I43D_WIN32MOUSE_H_
+#define _I43D_WIN32MOUSE_H_
 
 #include "I43DMouse.h"
 
@@ -80,4 +80,4 @@ public:
 };
 	
 } // namespace I43D 
-#endif  // _I43D_MOUSE_H_
+#endif  // _I43D_WIN32MOUSE_H_

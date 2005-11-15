@@ -17,8 +17,8 @@ this program; if not, write to the Free Software Foundation, Inc., 59 Temple
 Place - Suite 330, Boston, MA 02111-1307, USA, or go to
 http://www.gnu.org/copyleft/lesser.txt.
 ------------------------------------------------------------------------------------- */
-#ifndef _I43D_TABLET_H_
-#define _I43D_TABLET_H_
+#ifndef _I43D_TOUCH_SCREEN_H_
+#define _I43D_TOUCH_SCREEN_H_
 
 #include "I43DPlatform.h"
 
@@ -54,4 +54,4 @@ class _DLL_EXPORT Tablet abstract {
 }
 
 } // namespace I43D 
-#endif  // _I43D_TABLET_H_
+#endif  // _I43D_TOUCH_SCREEN_H_

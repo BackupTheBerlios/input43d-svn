@@ -18,7 +18,7 @@ Place - Suite 330, Boston, MA 02111-1307, USA, or go to
 http://www.gnu.org/copyleft/lesser.txt.
 ------------------------------------------------------------------------------------- */
 
-#include "I43DWin32Mouse.h"
+#include "Win32/I43DWin32Mouse.h"
 
 namespace I43D {
 
@@ -32,15 +32,19 @@ void Win32Mouse::enableEvents(const bool flag) {
 }
 
 unsigned int Win32Mouse::getX() {
+	return 0;
 }
 
 unsigned int Win32Mouse::getY() {
+	return 0;
 }
 
 bool Win32Mouse::isInClientArea() {
+	return false;
 }
 
 bool Win32Mouse::isButtonPressed(const unsigned short buttonNum) {
+	return false;
 }
 
 void Win32Mouse::setStandardCursor(const StandardCursorID cursorID) {

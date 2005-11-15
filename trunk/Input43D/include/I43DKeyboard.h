@@ -228,7 +228,7 @@ public:
 	 *      The number of the key to look up.
 	 * @see I43D::Keyboard::getKeyNumForScanCode(const unsigned int)
 	 */
-	unsigned int getScanCodeForKeyNum(const unsigned short keyNum) = 0;
+	virtual unsigned int getScanCodeForKeyNum(const unsigned short keyNum) = 0;
 
 	/*!
 	 * @brief
@@ -241,7 +241,7 @@ public:
 	 *     The scan code to look up.
 	 * @see I43D::Keyboard::getScanCodeForKeyNum(const unsigned short);
 	 */
-	unsigned short getKeyNumForScanCode(const unsigned int scanCode) = 0;
+	virtual unsigned short getKeyNumForScanCode(const unsigned int scanCode) = 0;
 
 	/*!
 	 * @brief
@@ -251,7 +251,7 @@ public:
 	 * @see I43D::NPKeyID
 	 * @see I43D::Keyboard::getKeyNumForNPK(const NPKeyID)
 	 */
-	NPKeyID getNPKForKeyNum(const unsigned short keyNum) = 0;
+	virtual NPKeyID getNPKForKeyNum(const unsigned short keyNum) = 0;
 
 	/*!
 	 * @brief
@@ -261,7 +261,7 @@ public:
 	 * @see I43D::NPKeyID
 	 * @see I43D::Keyboard::getNPKForKeyNum(const unsigned short)
 	 */
-	unsigned short getKeyNumForNPK(const NPKeyID npk) = 0;
+	virtual unsigned short getKeyNumForNPK(const NPKeyID npk) = 0;
 
 	/*!
 	 * @brief 

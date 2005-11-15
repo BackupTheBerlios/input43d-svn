@@ -34,7 +34,7 @@ http://www.gnu.org/copyleft/lesser.txt.
 #	if defined ( _XBOX )
 #	else
 #		pragma unmanaged
-#		if defined( _DLL ) // _DLL is automatically defined for DLL builds in MSVC
+#		if defined( _WINDLL ) // _DLL is automatically defined for DLL builds in MSVC
 #			undef _DLL_EXPORT
 //#			pragma warning (disable : 4251)
 #			if defined( I43D_NONCLIENT_BUILD )
